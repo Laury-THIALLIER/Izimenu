@@ -1,0 +1,1377 @@
+@font-face {
+	font-family: "Aventa";
+	src: url('../font/Aventa\ Regular.ttf');
+}
+
+@font-face {
+	font-family: "Aventa";
+	font-weight: bold;
+	src: url('../font/Aventa\ Bold.ttf');
+}
+
+html, body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Aventa;
+    color: white;
+    background-color: #06374c;
+}
+
+/* Nav */
+
+nav {
+    position: absolute;
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+nav img {
+    height: 30px;
+    margin-left: 200px;
+}
+
+nav p {
+    padding: 10px 20px;
+    /* border: 3px solid #0896a7; */
+    background-color: #0896a7;
+    border-radius: 20px;
+    margin-right: 200px;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 200px;
+}
+
+.header-img {
+    width: 1000px;
+    margin: 150px 0px;
+}
+
+.presentation {
+    max-width: 660px;
+    margin-right: 100px;
+    width: 50%;
+}
+
+.presentation h1 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.presentation p {
+    font-size: 22px;
+    margin-bottom: 75px;
+}
+
+.presentation a {
+    height: 70px;
+    width: 190px;
+    border-radius: 20px;
+    border: 3px solid #0896a7;
+    background-color: #0896a7;
+    color: white;
+    font-size: 18px;
+    padding: 20px 50px;
+    text-decoration: none;
+    transition: all ease-in-out .2s;
+}
+
+.presentation a:hover {
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+/* Avantages */
+
+.advantages {
+    margin: 0px 200px;
+}
+
+.nfc {
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages h2 {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.advantages p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 145px;
+}
+
+.advantages .items {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 150px;
+}
+
+.advantages .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages .item img {
+    height: 130px;
+    width: 130px;
+}
+
+.advantages .item h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.advantages .item p {
+    font-size: 20px;
+    max-width: 300px;
+}
+
+.advantages .last-item {
+    margin-bottom: 0px;
+}
+
+/* Modifiable */
+
+.editable {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 200px;
+    margin-bottom: 150px;
+}
+
+.editable img {
+    height: 130%;
+    width: 130%;
+}
+
+.editable .text {
+    max-width: 50%;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 100px;
+}
+
+.editable .text h2 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.editable .text p {
+    font-size: 20px;
+}
+
+/* Déco */
+    
+.deco1 /* En dessous de "Mieux qu'un PDF" */ {
+    display: flex;
+    position: absolute;
+    height: 1000px;
+    margin-left: -400px;
+    margin-top: -350px;
+    z-index: -1;
+}
+
+.deco2 /* Tarifs du dessus */ {
+    transform: rotate(60deg);
+    display: flex;
+    position: absolute;
+    height: 1000px;
+    margin-left: 50%;
+    margin-top: -500px;
+    z-index: -1;
+}
+
+.deco3 /* En dessus de "Facilement modifiable" */ {
+    transform: rotate(-40deg);
+    display: flex;
+    position: absolute;
+    height: 800px;
+    margin-left: -750px;
+    margin-top: 700px;
+    padding: 0px;
+    z-index: -1;
+}
+
+.deco4 /* Contact */ {
+    transform: rotate(-80deg);
+    display: flex;
+    position: absolute;
+    height: 800px;
+    margin-left: 60%;
+    margin-top: -200px;
+    z-index: -1;
+}
+
+.deco5 /* Tarifs du dessous */ {
+    transform: rotate(-110deg);
+    display: flex;
+    position: absolute;
+    height: 500px;
+    margin-left: -150px;
+    margin-top: -300px;
+    z-index: -1;
+}
+
+.deco6 /* A côté de "Accessible en NFC et QR code" */ {
+    transform: rotate(-240deg);
+    display: flex;
+    position: absolute;
+    height: 500px;
+    margin-left: 1800px;
+    margin-top: 250px;
+    z-index: -1;
+}
+
+.deco7 /* Au dessus de "Mieux qu'un PDF" */ {
+    transform: rotate(0deg);
+    display: flex;
+    position: absolute;
+    height: 200px;
+    margin-left: 20%;
+    margin-top: -800px;
+    z-index: -1;
+}
+
+.deco8 /* Au dessus de "Facilement modifiable" */ {
+    transform: rotate(90deg);
+    display: flex;
+    position: absolute;
+    height: 100px;
+    margin-left: 800px;
+    margin-top: 800px;
+    z-index: -1;
+}
+
+.deco9 /*Au dessus de la FAQ */ {
+    transform: rotate(180deg);
+    display: flex;
+    position: absolute;
+    height: 100px;
+    margin-left: 1000px;
+    margin-top: 250px;
+    z-index: -1;
+}
+
+/* Démo */
+
+.demo {
+    background-color: #f0e8df;
+    font-size: 22px;
+    text-align: center;
+    color: #06374c;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    background-image:url('../img/deco_demo_desktop.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.demo-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.demo-left {
+    width: 80vh;
+}
+
+.demo-left img {
+    width: 50%;
+}
+
+.demo .qrcode {
+    margin: 150px 30px;
+    width: 30%;
+}
+
+.demo a {
+    border-radius: 35px;
+    border: 3px solid #06374c;
+    border-radius: 20px;
+    background-color: #06374c;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px 50px;
+    transition: all ease-in-out .2s;
+}
+
+.demo a:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #06374c;
+    cursor: pointer;
+}
+
+/* Tarifs */
+
+.prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px 200px;
+    font-size: 24px;
+    margin-top: 150px;
+}
+
+.prices h5 {
+    border-bottom: 1px solid;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+}
+
+.prices .check {
+    text-align: start;
+    padding-left: 25px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.check .fa-check {
+    color: #52BD7D;
+}
+
+.check .fa-times {
+    color: #FF3C3C;
+}
+
+.checks {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.classic-price {
+    width: 50%;
+    height: 50%;
+    padding: 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    color: #06374c;
+}
+
+.first-p {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid;
+}
+
+.classic-price h5 {
+    font-size: 22px;
+}
+
+.left {
+    border-right: 0px;
+    margin-right: -20px;
+}
+
+.right {
+    border-left: 0px;
+    margin-left: -20px;
+}
+
+.price {
+    width: 50%;
+    padding: 30px;
+    border-radius: 25px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 10px 0px 60px rgba(0, 0, 0, 0.1), -10px 0px 60px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: #06374c;
+    z-index: 99;
+}
+
+.price h5 {
+    font-size: 26px;
+}
+
+.prices .text {
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid;
+}
+
+.pricing {
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.pricing span {
+    font-weight: 700;
+}
+
+.conditions {
+    font-style: italic;
+    font-size: 12px;
+    margin-bottom: 150px;
+    margin: 0px 20%;
+    padding-bottom: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+/* FAQ */
+
+.faq {
+    margin: 200px;
+}
+.faq h2 {
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+.container {
+    margin: 30px 0px;
+}
+
+.accordion a {
+position: relative;
+flex-direction: column;
+width: 100%;
+padding: 1rem 0.3rem;
+color: white;
+font-size: 1.15rem;
+font-weight: 400;
+border-bottom: 1px solid white;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+transition: all ease-in-out .2s;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+cursor: pointer;
+color: #eb565f;
+}
+
+.accordion a:hover::after {
+border: 1px solid #eb565f;
+}
+
+.accordion a.active {
+color: #eb565f;
+border-bottom: 1px solid #eb565f;
+}
+
+.accordion a::after {
+font-family: 'Ionicons';
+content: '\f218';
+float: right;
+right: 1rem;
+font-size: 1rem;
+color: white;
+padding: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+border: 1px solid white;
+text-align: center;
+min-width: 15px;
+min-height: 15px;
+margin-left: 15px;
+transition: all ease-in-out .2s;
+}
+
+.accordion a.active::after {
+font-family: 'Ionicons';
+content: '\f209';
+color: #eb565f;
+border: 1px solid #eb565f;
+}
+
+.accordion .content {
+opacity: 0;
+padding: 0 1rem;
+max-height: 0;
+overflow: hidden;
+clear: both;
+transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+font-size: 1rem;
+font-weight: 300;
+}
+
+.accordion .content.active {
+opacity: 1;
+padding: 1rem;
+max-height: 100%;
+transition: all 0.35s ease 0.15s;
+}
+
+/* Formulaire de contact */
+
+.contact {
+    margin: 0px 200px 30px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 200px;
+    margin-bottom: 0px;
+}
+
+form {
+    margin: 65px 0px;
+    width: 100%;
+    color: white;
+}
+
+.left-input {
+    margin-right: 20px;
+}
+
+form .part1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .part1 input:nth-child(0) {
+    margin-right: 20px;
+}
+
+form .case {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    width: 100%;
+}
+
+form .case input {
+    height: 50px;
+    border: 1px solid;
+    border-radius: 20px;
+    border-color: white;
+    background-color:  rgba(0, 0, 0, 0); 
+    margin-bottom: 30px;
+    font-size: 16px;
+    padding-left: 10px;
+    color: white;
+    font-family: Aventa;
+}
+
+form textarea {
+    resize: none;
+    max-width: 100%;
+    height: 300px;
+    border: 1px solid;
+    border-radius: 20px;
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: Aventa;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #0896a7;
+}
+
+form input::placeholder {
+    color: white;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #0896a7;
+}
+
+form textarea::placeholder {
+    color: white;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button button {
+    border: none;
+    font-size: 18px;
+    padding: 20px 50px;
+    margin-top: 50px;
+    border-radius: 35px;
+    border: 3px solid #0896a7;
+    border-radius: 20px;
+    background-color: #0896a7;
+    color: #f0e8df;
+    transition: all ease-in-out .2s;
+}
+
+.button button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+/* Pied de page */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+footer img {
+    width: 130px;
+    padding-top: 10px;
+}
+
+footer i {
+    color: #eb565f;
+}
+
+@media screen and (max-width: 1500px) {
+    
+    /* Nav */
+    
+    nav {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    
+    /* Header */
+
+    .header {
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: auto;
+        margin: 0px;
+        margin-top: 0px;
+        width: 100%;
+        margin-bottom: 150px;
+        text-align: center;
+    }
+
+    .header-img {
+        width: 30%;
+        margin: 0px 0px 30px 0px;
+    }
+
+    .presentation {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .presentation p {
+        font-size: 22px;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 50px;
+    }
+
+    /* Avantages */
+    
+    .advantages {
+        margin: 0px 200px;
+    }
+    
+    /* Modifiable */
+    
+    .editable {
+        justify-content: center;
+        margin: 30px 0px;
+        margin-bottom: 200px;
+    }
+    
+    .editable img {
+        height: 90%;
+        width: 90%;
+    }
+
+    .editable-img {
+        display: flex;
+        align-items: flex-start;
+        justify-content: end;
+    }
+    
+    .editable .text {
+        max-width: 40%;
+        margin-right: 0px;
+        width: 100%;
+    }
+    
+    .editable .text h2 {
+        width: 100%;
+    }
+
+    /* Déco */
+
+    .deco3 /* En dessus de "Facilement modifiable" */ {
+        transform: rotate(-40deg);
+        display: flex;
+        position: absolute;
+        height: 800px;
+        margin-left: -900px;
+        margin-top: 700px;
+        padding: 0px;
+        z-index: -1;
+    }
+    
+    .deco4 /* Contact */ {
+        margin-left: 40%;
+    }
+
+    .deco7 /* Au dessus de "Mieux qu'un PDF" */ {
+        margin-left: 18%;
+    }
+
+    .deco8 /* Au dessus de "Facilement modifiable" */ {
+        margin-left: 20%;
+        margin-top: 900px;
+    }
+
+    .deco9 /*Au dessus de la FAQ */ {
+        transform: rotate(180deg);
+        display: flex;
+        position: absolute;
+        height: 100px;
+        margin-left: 70%;
+        margin-top: 250px;
+        z-index: -1;
+    }
+
+    /* Démo */
+
+    .demo-left {
+        margin-left: 20px;
+    }
+
+    .demo .qrcode {
+        max-width: 650px;
+        width: 85%;
+    }
+
+    /* Tarifs */
+
+    .prices {
+        margin: 30px 30px;
+    }
+
+    .price {
+        width: 60%;
+    }
+
+    .conditions {
+       margin: 0px 10%;
+    }
+
+    /* FAQ */
+
+    .container {
+        margin-top: 30px;
+    }
+    
+    /* Formulaire de contact */
+    
+    .contact {
+        margin: 30px 200px;
+    }
+    
+    form {
+        margin: 30px 0px;
+    }
+
+    .left-input {
+        margin-right: 0px;
+    }
+    
+    form .part1 {
+        flex-direction: column;
+    }
+    
+    form .case {
+        width: 99%;
+    }
+    
+    .button button {
+        font-size: 18px;
+    }
+
+    /* Footer */
+
+    footer {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    /* Nav */
+    
+    nav {
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    nav img {
+        height: 25px;
+        margin-left: 100px;
+    }
+
+    nav p {
+        margin-right: 100px;
+    }
+    
+    /* Header */
+
+    .header {
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0px 0px;
+        height: auto;
+        margin: 0px;
+        margin-top: 0px;
+        width: auto;
+        margin-bottom: 150px;
+        text-align: center;
+    }
+
+    .header-img {
+        width: 30%;
+        margin-bottom: 30px;
+    }
+
+    .presentation {
+        padding: 0px;
+        margin: 0px;
+        width: 70%;
+        max-width: 70%;
+    }
+
+    .presentation p {
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 50px;
+    }
+
+    /* Avantages */
+    
+    .advantages {
+        margin: 0px 80px;
+    }
+    
+    .advantages .items {
+        flex-direction: column;
+    }
+    
+    .advantages .item p {
+        max-width: 50%;
+    }
+    
+    /* Modifiable */
+    
+    .editable {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .editable img {
+        height: 100%;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .editable-img {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .editable .text {
+        max-width: 80%;
+        margin-right: 0px;
+        width: 80%;
+        text-align: center;
+    }
+    
+    .editable .text h2 {
+        width: 100%;
+    }
+    
+    /* Déco */
+    
+    .deco2 /* Tarifs du dessus */ {
+        transform: rotate(60deg);
+        display: flex;
+        position: absolute;
+        height: 800px;
+        margin-left: 0%;
+        margin-top: -300px;
+        z-index: -1;
+    }
+    
+    .deco4 /* Contact */ {
+        margin-left: 40%;
+    }
+    
+    .deco6 /* A côté de "Accessible en NFC et QR code" */ {
+        display: none;
+    }
+    
+    .deco7 /* Au dessus de "Mieux qu'un PDF" */ {
+        display: none;
+    }
+    
+    .deco8 /* Au dessus de "Facilement modifiable" */ {
+        display: none;
+    }
+    
+    .deco9 /*Au dessus de la FAQ */ {
+        display: none;
+    }
+    
+    /* Démo */
+
+    .demo {
+        padding-top: 150px;
+        flex-direction: column;
+        background-image:url('../img/deco_demo_tablet.svg');
+    }
+
+    .demo-left {
+        margin-left: 0px;
+        max-width: 80%;
+    }
+
+    .demo .qrcode {
+        margin-right: 0px;
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .demo button {
+        margin-bottom: 50px;
+    }
+
+    /* Tarifs */
+
+    .prices {
+        flex-direction: column;
+        margin: 30px 30px;
+        margin-top: 80px;
+    }
+
+    .classic-price {
+        width: 70%;
+    }
+
+    .left {
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    .right {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .price {
+        width: 70%;
+        height: 50%;
+        font-size: 16px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+    .price h5 {
+        font-size: 22px;
+    }
+
+    .prices .text {
+        padding-bottom: 16px;
+    }
+
+    .conditions {
+        margin: 0px 15%;
+    }
+    
+    /* FAQ */
+    
+    .faq {
+        margin: 50px;
+    }
+
+    .faq h2 {
+        text-align: center;
+    }
+
+    .container {
+        margin-bottom: 150px;
+    }
+    
+    /* Formulaire de contact */
+    
+    .contact {
+        margin: 30px 50px 30px 50px;
+    }
+    
+    .contact-form h3 {
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    form {
+        margin: 30px 0px;
+        width: 100%;
+    }
+
+    .left-input {
+        margin-right: 0px;
+    }
+    
+    form .part1 {
+        flex-direction: column;
+    }
+    
+    form .case input {
+        width: 100%;
+    }
+    
+    form textarea {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    form .button {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    /* Nav */
+    
+    nav {
+        margin: 30px 0px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav img {
+        height: 25px;
+        margin-left: 0px;
+    }
+
+    nav p {
+        margin-right: 0px;
+    }
+    
+    /* Header */
+
+    .header {
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0px 0px;
+        height: auto;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .header-img {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .presentation {
+        padding: 0px;
+        margin: 0px;
+        width: 90%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .presentation h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .presentation p {
+        font-size: 20px;
+        padding: 0px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .presentation a {
+        height: 45px;
+        width: 240px;
+        border-radius: 20px;
+        border: 3px solid #0896a7;
+        background-color: #0896a7;
+        color: white;
+        font-size: 18px;
+        padding: 20px 0px 0px 0px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    /* Avantages */
+    
+    .advantages {
+        margin: 0px;
+        margin-top: 100px;
+    }
+
+    .advantages h2 {
+        font-size: 24px;
+        width: 90%;
+        margin: 10px 20px;
+    }
+    
+    .advantages p {
+        font-size: 18px;
+        margin: 10px 0px 80px 0px;
+    }
+
+    .advantages .text-nfc {
+        margin: 20px;
+        margin-bottom: 80px;
+    }
+    
+    .advantages .items {
+        flex-direction: column;
+    }
+    
+    .advantages .item h2 {
+        font-size: 20px;
+    }
+    
+    .advantages .item p {
+        font-size: 18px;
+        max-width: 50%;
+    }
+    
+    /* Modifiable */
+    
+    .editable {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+    
+    .editable img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .editable-img {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .editable .text {
+        max-width: 90%;
+        margin-right: 0px;
+        width: 90%;
+        text-align: center;
+    }
+    
+    .editable .text h2 {
+        font-size: 26px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    
+    .editable .text p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    
+    /* Déco */
+    
+    .deco1 /* En dessous de "Mieux qu'un PDF" */ {
+        margin-top: -300px;
+    }
+
+    .deco3 /* En dessus de "Facilement modifiable" */ {
+        display: none;
+    }
+    
+    .deco4 /* Contact */ {
+        margin-left: -100px;
+    }
+    
+    /* Démo */
+
+    .demo {
+        font-size: 20px;
+        flex-direction: column;
+        padding: 0px 20px;
+        background-image:url('../img/deco_demo_mobile.svg');
+    }
+
+    .demo-left p {
+        width: 100%;
+    }
+
+    .demo-left img {
+        width: 50%;
+        margin-top: 150px;
+    }
+
+    .demo .qrcode {
+        margin: 0px;
+        width: 85%;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+
+    .demo button {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    /* Tarifs */
+
+    .prices {
+        flex-direction: column;
+        margin: 30px 0px;
+        font-size: 22px;
+        margin-top: 80px;
+    }
+    
+    .pricing {
+        font-size: 18px;
+    }
+
+    .classic-price {
+        width: 75%;
+    }
+
+    .classic-price h5 {
+        font-size: 20px;
+    }
+
+    .left {
+        margin-bottom: 20px;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+
+    .price {
+        width: 75%;
+        height: 50%;
+        font-size: 16px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+    .price h5 {
+        font-size: 20px;
+    }
+
+    .prices .text {
+        padding-bottom: 16px;
+    }
+
+    .conditions {
+        margin: 0px 10%;
+    }
+    
+    /* FAQ */
+    
+    .container {
+        margin-top: 20px;
+        margin-bottom: 150px;
+    }
+
+    .faq h2 {
+        text-align: center;
+    }
+    
+    /* Formulaire de contact */
+    
+    .contact {
+        margin: 30px 50px 30px 50px;
+    }
+    
+    .contact-form h3 {
+        font-size: 24px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    form {
+        margin: 30px 0px;
+        width: 100%;
+    }
+
+    .left-input {
+        margin-right: 0px;
+    }
+    
+    form .part1 {
+        flex-direction: column;
+    }
+    
+    form .case input {
+        width: 100%;
+    }
+    
+    form textarea {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    form .button {
+        justify-content: center;
+    }
+}
